@@ -1,0 +1,448 @@
+<html><head>
+<title>Search  Database</title>
+</head>
+<body bgcolor="#FFFFFF">
+<blockquote>
+<blockquote>
+<center>
+<h3>Search  Database</h3>
+ </center>
+<form method=POST action="http://www.vpul.upenn.edu/cgi-bin/dbsearch.pl/careerservices/pcn//summernetworksearchdb.cfg">
+<input type="hidden" name="action" value="search">
+<table border=0>
+<tr>
+<td valign=top><b>Search for a keyword or phrase:</b></td>
+<td valign=top><input type="text" name="searchstring" size=30>
+<p>
+<b>Specify which fields to search for the keyword/phrase</b><br>
+<font size=-1>Select multiple fields by holding down the &lt;CNTL&gt; 
+key and then clicking on each field you wish to search.</font><br>
+<select name="searchfields" size=5 multiple>
+<option value=0 selected>Search all fields
+<option value="Name">Name
+<option value="Class Status">Class Status
+<option value="Primary Activity">Primary Activity
+<option value="Email">Email
+<option value="Major">Major
+<option value="Employer">Employer
+<option value="Department">Department
+<option value="Title">Title
+<option value="City">City
+<option value="State">State
+<option value="Country">Country
+<option value="Industry">Industry
+<option value="Job Type">Job Type
+<option value="How Found Internship">How Found Internship
+</select></td></tr>
+<tr><td height=20>&nbsp;</td><td height=20>&nbsp;</td></tr>
+<tr><td valign=top>
+<b>Choose from a list of keywords for selected fields:</b>
+</td><td valign=top>
+<select name="search_Primary Activity">
+<option value="0">Choose Primary Activity
+<option value="Classes">Classes
+<option value="Other">Other
+<option value="Research">Research
+<option value="Travel">Travel
+<option value="Work experience including summer job, internship, volunteer work, externship, etc.">Work experience including summer job, internship, volunteer work, externship, etc.
+</select><br>
+<select name="search_Industry">
+<option value="0">Choose Industry
+<option value="Accounting">Accounting
+<option value="Communications: Advertising/Public Relations">Communications: Advertising/Public Relations
+<option value="Communications: Media/Entertainment">Communications: Media/Entertainment
+<option value="Communications: Publishing/Printing">Communications: Publishing/Printing
+<option value="Consulting">Consulting
+<option value="Design">Design
+<option value="Education: Elementary/Secondary">Education: Elementary/Secondary
+<option value="Education: For Profit Education">Education: For Profit Education
+<option value="Education: Higher Education">Education: Higher Education
+<option value="Education: Pre-School/Nursery">Education: Pre-School/Nursery
+<option value="Education: Research Labs/Centers - Higher Education">Education: Research Labs/Centers - Higher Education
+<option value="Energy/Natural Resources/Utilities">Energy/Natural Resources/Utilities
+<option value="Financial Services">Financial Services
+<option value="Government: Federal Government">Government: Federal Government
+<option value="Government: Local Government">Government: Local Government
+<option value="Government: Non-U.S. Government Service">Government: Non-U.S. Government Service
+<option value="Government: State Government">Government: State Government
+<option value="Government: U.S. National Laboratories">Government: U.S. National Laboratories
+<option value="Healthcare: Community/Public Health Center">Healthcare: Community/Public Health Center
+<option value="Healthcare: For-Profit/Private Health Care Center">Healthcare: For-Profit/Private Health Care Center
+<option value="Healthcare: Health Maintenance Organization">Healthcare: Health Maintenance Organization
+<option value="Healthcare: Hospital">Healthcare: Hospital
+<option value="Healthcare: Nursing Home/Long Term Care Facility">Healthcare: Nursing Home/Long Term Care Facility
+<option value="Hospitality/Leisure/Sports">Hospitality/Leisure/Sports
+<option value="Insurance">Insurance
+<option value="Legal Services">Legal Services
+<option value="Manufacturing: Aerospace">Manufacturing: Aerospace
+<option value="Manufacturing: Automotive">Manufacturing: Automotive
+<option value="Manufacturing: Biomedical Products/Pharmaceuticals">Manufacturing: Biomedical Products/Pharmaceuticals
+<option value="Manufacturing: Chemicals/Gases">Manufacturing: Chemicals/Gases
+<option value="Manufacturing: Computer Products - Hardware">Manufacturing: Computer Products - Hardware
+<option value="Manufacturing: Consumer Products">Manufacturing: Consumer Products
+<option value="Manufacturing: Electronics/Robotics">Manufacturing: Electronics/Robotics
+<option value="Manufacturing: Telecommunications">Manufacturing: Telecommunications
+<option value="Manufacturing: Other">Manufacturing: Other
+<option value="Nonprofit: Cultural Institutions/Arts and Cultures">Nonprofit: Cultural Institutions/Arts and Cultures
+<option value="Nonprofit: Public Interest/Advocacy">Nonprofit: Public Interest/Advocacy
+<option value="Nonprofit: Social Services">Nonprofit: Social Services
+<option value="Other">Other
+<option value="Real Estate/Construction">Real Estate/Construction
+<option value="Retail/Wholesale">Retail/Wholesale
+<option value="Technology">Technology
+<option value="Transportation">Transportation
+</select><br>
+<select name="search_Job Type">
+<option value="0">Choose Job Type
+<option value="Accounting: Internal Accounting">Accounting: Internal Accounting
+<option value="Accounting: Public Accounting">Accounting: Public Accounting
+<option value="Architecture">Architecture
+<option value="Arts: Administration">Arts: Administration
+<option value="Arts: Graphics/Design">Arts: Graphics/Design
+<option value="Arts: Museum/Art Gallery Curatorship">Arts: Museum/Art Gallery Curatorship
+<option value="Arts: Performing Arts">Arts: Performing Arts
+<option value="Communications: Advertising/Account Management">Communications: Advertising/Account Management
+<option value="Communications: Editing">Communications: Editing
+<option value="Communications: Journalism/Other Writing">Communications: Journalism/Other Writing
+<option value="Communications: Production">Communications: Production
+<option value="Communications: Public Relations">Communications: Public Relations
+<option value="Consulting: Management / Strategy">Consulting: Management / Strategy
+<option value="Consulting: Research">Consulting: Research
+<option value="Consulting: Technical/Information Systems">Consulting: Technical/Information Systems
+<option value="Economics: Economic Development">Economics: Economic Development
+<option value="Economics: Economic Research/Econometrics">Economics: Economic Research/Econometrics
+<option value="Education: Administration">Education: Administration
+<option value="Education: Counseling/Psychology">Education: Counseling/Psychology
+<option value="Education: Research">Education: Research
+<option value="Education: Teaching">Education: Teaching
+<option value="Energy: Management & Policy">Energy: Management & Policy
+<option value="Energy: Research">Energy: Research
+<option value="Energy: Systems Design">Energy: Systems Design
+<option value="Engineering: Design">Engineering: Design
+<option value="Engineering: Manufacturing/Production">Engineering: Manufacturing/Production
+<option value="Engineering: Quality Assurance">Engineering: Quality Assurance
+<option value="Engineering: Research & Development">Engineering: Research & Development
+<option value="Engineering: Systems">Engineering: Systems
+<option value="Engineering: Testing">Engineering: Testing
+<option value="Finance: Commercial Banking/Lending">Finance: Commercial Banking/Lending
+<option value="Finance: Financial Planning & Analysis - non-bnkg">Finance: Financial Planning & Analysis - non-bnkg
+<option value="Finance: Investment Banking Analyst">Finance: Investment Banking Analyst
+<option value="Finance: Investment Management/Counsel">Finance: Investment Management/Counsel
+<option value="Finance: Private Equity Analyst">Finance: Private Equity Analyst
+<option value="Finance: Sales">Finance: Sales
+<option value="Finance: Securities Research Analyst">Finance: Securities Research Analyst
+<option value="Finance: Trading">Finance: Trading
+<option value="Finance: Venture Capital Analyst">Finance: Venture Capital Analyst
+<option value="Government: Intelligence /Law Enforcement">Government: Intelligence /Law Enforcement
+<option value="Government: Legislative Aide/Staff">Government: Legislative Aide/Staff
+<option value="Government: Lobbying">Government: Lobbying
+<option value="Government: Military Personnel">Government: Military Personnel
+<option value="Government: Policy Research/Analysis">Government: Policy Research/Analysis
+<option value="Government: Public Management">Government: Public Management
+<option value="Health Care: Health Care Policy/Management">Health Care: Health Care Policy/Management
+<option value="Health Care: Hospital/HMO Administration">Health Care: Hospital/HMO Administration
+<option value="Healthcare: Public Health Administration">Healthcare: Public Health Administration
+<option value="Information Technology: Data Analyst/Administrator">Information Technology: Data Analyst/Administrator
+<option value="Information Technology: Product Designer">Information Technology: Product Designer
+<option value="Information Technology: Program Manager">Information Technology: Program Manager
+<option value="Information Technology: Programmer">Information Technology: Programmer
+<option value="Information Technology: Software">Information Technology: Software
+<option value="Information Technology: Software Developer/Engineer">Information Technology: Software Developer/Engineer
+<option value="Information Technology: Systems Engineer/Analyst">Information Technology: Systems Engineer/Analyst
+<option value="Information Technology: Technical Support Specialist">Information Technology: Technical Support Specialist
+<option value="Information Technology: Technical Writer">Information Technology: Technical Writer
+<option value="Information Technology: Technology Analyst">Information Technology: Technology Analyst
+<option value="Information Technology: Web Designer/Developer">Information Technology: Web Designer/Developer
+<option value="Insurance: Actuarial">Insurance: Actuarial
+<option value="Insurance: Benefits & Pension Planning">Insurance: Benefits & Pension Planning
+<option value="Insurance: Claims Adjustment">Insurance: Claims Adjustment
+<option value="Insurance: Risk">Insurance: Risk
+<option value="Insurance: Underwriting">Insurance: Underwriting
+<option value="Management: Administrative Asst/Office Management">Management: Administrative Asst/Office Management
+<option value="Management: Entrepreneur/Founder">Management: Entrepreneur/Founder
+<option value="Management: General Management">Management: General Management
+<option value="Management: Human Resources">Management: Human Resources
+<option value="Management: Operations">Management: Operations
+<option value="Marketing: Buyer/Merchandising">Marketing: Buyer/Merchandising
+<option value="Marketing: Marketing Analysis/Research">Marketing: Marketing Analysis/Research
+<option value="Marketing: New Business Development">Marketing: New Business Development
+<option value="Marketing: Product/Brand Management">Marketing: Product/Brand Management
+<option value="Marketing: Sales/Sales Account Management">Marketing: Sales/Sales Account Management
+<option value="Mathematics: Operations Research">Mathematics: Operations Research
+<option value="Mathematics: Statistics">Mathematics: Statistics
+<option value="Nonprofit:  Administration">Nonprofit:  Administration
+<option value="Nonprofit: Direct Service">Nonprofit: Direct Service
+<option value="Nonprofit: Fund Raising/Promotion">Nonprofit: Fund Raising/Promotion
+<option value="Nonprofit: Policy">Nonprofit: Policy
+<option value="Nonprofit: Program Planning">Nonprofit: Program Planning
+<option value="Nonprofit: Research">Nonprofit: Research
+<option value="Nursing: Staff Nurse">Nursing: Staff Nurse
+<option value="Other">Other
+<option value="Paralegal">Paralegal
+<option value="Real Estate: Construction">Real Estate: Construction
+<option value="Real Estate: Development">Real Estate: Development
+<option value="Real Estate: Property Management">Real Estate: Property Management
+<option value="Real Estate: Real Estate Investment Analyst">Real Estate: Real Estate Investment Analyst
+<option value="Scientific Research: Biology/Biochemistry">Scientific Research: Biology/Biochemistry
+<option value="Scientific Research: Biomedical – Other">Scientific Research: Biomedical – Other
+<option value="Scientific Research: Chemistry">Scientific Research: Chemistry
+<option value="Scientific Research: Physics">Scientific Research: Physics
+<option value="Scientific Research: Psychology">Scientific Research: Psychology
+</select><br>
+<select name="search_Major">
+<option value="0">Choose Major
+<option value="Accounting">Accounting
+<option value="Actuarial Science">Actuarial Science
+<option value="African Studies">African Studies
+<option value="Africana Studies">Africana Studies
+<option value="Ancient History">Ancient History
+<option value="Anthropology">Anthropology
+<option value="Applied Science - Biomedical Science">Applied Science - Biomedical Science
+<option value="Applied Science - Cognitive Science">Applied Science - Cognitive Science
+<option value="Applied Science - Computational Biology">Applied Science - Computational Biology
+<option value="Applied Science - Computer Science">Applied Science - Computer Science
+<option value="Architecture">Architecture
+<option value="Biochemistry">Biochemistry
+<option value="Bioengineering">Bioengineering
+<option value="Biological Basis of Behavior">Biological Basis of Behavior
+<option value="Biology">Biology
+<option value="Biophysics">Biophysics
+<option value="Biotechnology">Biotechnology
+<option value="Chemical and Biomolecular Engineering">Chemical and Biomolecular Engineering
+<option value="Chemistry">Chemistry
+<option value="Cinema Studies">Cinema Studies
+<option value="Classical Studies">Classical Studies
+<option value="Cognitive Science">Cognitive Science
+<option value="Communication">Communication
+<option value="Comparative Literature">Comparative Literature
+<option value="Computer and Information Science">Computer and Information Science
+<option value="Computer Engineering">Computer Engineering
+<option value="Computer Science">Computer Science
+<option value="Criminology">Criminology
+<option value="Digital Media Design">Digital Media Design
+<option value="Earth Science">Earth Science
+<option value="East Asian Area Studies">East Asian Area Studies
+<option value="East Asian Languages and Civilizations">East Asian Languages and Civilizations
+<option value="Economics">Economics
+<option value="Electrical Engineering">Electrical Engineering
+<option value="Elementary Education">Elementary Education
+<option value="English">English
+<option value="Entrepreneurship and Innovation">Entrepreneurship and Innovation
+<option value="Environmental Policy and Management">Environmental Policy and Management
+<option value="Environmental Studies">Environmental Studies
+<option value="Finance">Finance
+<option value="Fine Arts">Fine Arts
+<option value="French Studies">French Studies
+<option value="Gender, Culture and Society">Gender, Culture and Society
+<option value="German Studies">German Studies
+<option value="Global Analysis">Global Analysis
+<option value="Health and Societies">Health and Societies
+<option value="Health Care Management and Policy">Health Care Management and Policy
+<option value="Hispanic Studies">Hispanic Studies
+<option value="History">History
+<option value="History of Art">History of Art
+<option value="Individualized">Individualized
+<option value="Insurance and Risk Management">Insurance and Risk Management
+<option value="International Relations">International Relations
+<option value="International Studies and Business">International Studies and Business
+<option value="Italian Studies">Italian Studies
+<option value="Latin American and Latino Studies">Latin American and Latino Studies
+<option value="Legal Studies and Business Ethics">Legal Studies and Business Ethics
+<option value="Linguistics">Linguistics
+<option value="Management">Management
+<option value="Marketing">Marketing
+<option value="Marketing and Communication">Marketing and Communication
+<option value="Marketing and Operations Management">Marketing and Operations Management
+<option value="Materials Science and Engineering">Materials Science and Engineering
+<option value="Mathematical Economics">Mathematical Economics
+<option value="Mathematics">Mathematics
+<option value="Mechanical Engineering and Applied Mechanics">Mechanical Engineering and Applied Mechanics
+<option value="Modern Middle Eastern Studies">Modern Middle Eastern Studies
+<option value="Music">Music
+<option value="Nanotechnology">Nanotechnology
+<option value="Networked and Social Systems Engineering">Networked and Social Systems Engineering
+<option value="Nursing">Nursing
+<option value="Operations and Information Management">Operations and Information Management
+<option value="Philosophy">Philosophy
+<option value="Philosophy, Politics and Economics">Philosophy, Politics and Economics
+<option value="Physics and Astronomy">Physics and Astronomy
+<option value="Political Science">Political Science
+<option value="Psychology">Psychology
+<option value="Real Estate">Real Estate
+<option value="Retailing">Retailing
+<option value="Romance Languages">Romance Languages
+<option value="Russian">Russian
+<option value="Science, Technology and Society">Science, Technology and Society
+<option value="Social Impact and Responsibility">Social Impact and Responsibility
+<option value="Sociology">Sociology
+<option value="South Asia Studies">South Asia Studies
+<option value="Statistics">Statistics
+<option value="Systems Engineering">Systems Engineering
+<option value="Systems Science and Engineering">Systems Science and Engineering
+<option value="Theatre Arts">Theatre Arts
+<option value="Urban Studies">Urban Studies
+<option value="Visual Studies">Visual Studies
+</select><br>
+<select name="search_State">
+<option value="0">Choose State
+<option value="AK">AK
+<option value="AL">AL
+<option value="AR">AR
+<option value="AZ">AZ
+<option value="CA">CA
+<option value="CO">CO
+<option value="CT">CT
+<option value="DC">DC
+<option value="DE">DE
+<option value="FL">FL
+<option value="GA">GA
+<option value="IA">IA
+<option value="IL">IL
+<option value="IN">IN
+<option value="KS">KS
+<option value="KY">KY
+<option value="LA">LA
+<option value="MA">MA
+<option value="MD">MD
+<option value="ME">ME
+<option value="MI">MI
+<option value="MN">MN
+<option value="MO">MO
+<option value="NC">NC
+<option value="NH">NH
+<option value="NJ">NJ
+<option value="NM">NM
+<option value="NY">NY
+<option value="OH">OH
+<option value="OK">OK
+<option value="OR">OR
+<option value="PA">PA
+<option value="PR">PR
+<option value="RI">RI
+<option value="SC">SC
+<option value="TN">TN
+<option value="TX">TX
+<option value="UT">UT
+<option value="VA">VA
+<option value="WA">WA
+<option value="WI">WI
+</select><br>
+<select name="search_Country">
+<option value="0">Choose Country
+<option value="Argentina">Argentina
+<option value="Austria">Austria
+<option value="Bangladesh">Bangladesh
+<option value="Benin">Benin
+<option value="Botswana">Botswana
+<option value="Brazil">Brazil
+<option value="Canada">Canada
+<option value="Chile">Chile
+<option value="China, People's Republic of">China, People's Republic of
+<option value="Costa Rica">Costa Rica
+<option value="France">France
+<option value="Gambia">Gambia
+<option value="Germany">Germany
+<option value="Ghana">Ghana
+<option value="Greece">Greece
+<option value="Guatemala">Guatemala
+<option value="Honduras">Honduras
+<option value="Iceland">Iceland
+<option value="India">India
+<option value="Indonesia">Indonesia
+<option value="Israel">Israel
+<option value="Italy">Italy
+<option value="Kenya">Kenya
+<option value="Malaysia">Malaysia
+<option value="Mexico">Mexico
+<option value="Morocco">Morocco
+<option value="New Zealand">New Zealand
+<option value="Nicaragua">Nicaragua
+<option value="Nigeria">Nigeria
+<option value="Paraguay">Paraguay
+<option value="Peru">Peru
+<option value="Romania">Romania
+<option value="Singapore">Singapore
+<option value="South Africa, Republic of">South Africa, Republic of
+<option value="South Korea">South Korea
+<option value="Spain">Spain
+<option value="Sweden">Sweden
+<option value="Thailand">Thailand
+<option value="Trinidad and Tobago">Trinidad and Tobago
+<option value="Turkey">Turkey
+<option value="United Arab Emirates">United Arab Emirates
+<option value="United Kingdom">United Kingdom
+<option value="United States">United States
+<option value="Vietnam">Vietnam
+<option value="Zimbabwe">Zimbabwe
+</select><br>
+<select name="search_Class Status">
+<option value="0">Choose Class Status
+<option value="Sophomore - graduating between December 2015 and August 2016">Sophomore - graduating between December 2015 and August 2016
+<option value="Junior - graduating between December 2014 and August 2015">Junior - graduating between December 2014 and August 2015
+<option value="Senior - graduating between December 2013 and August 2014">Senior - graduating between December 2013 and August 2014
+</select><br>
+<select name="search_How Found Internship">
+<option value="0">Choose How Found Internship
+<option value="Applied Directly To Organization">Applied Directly To Organization
+<option value="Contacts: Family/Friend/Professor/Other">Contacts: Family/Friend/Professor/Other
+<option value="On-Campus Recruiting">On-Campus Recruiting
+<option value="Online Job/Intern Site-NOT PennLink or iNet">Online Job/Intern Site-NOT PennLink or iNet
+<option value="Other Career Services Leads-non-OCR">Other Career Services Leads-non-OCR
+<option value="Penn Sponsored Internship Program">Penn Sponsored Internship Program
+<option value="Previous Employer">Previous Employer
+<option value="Special Program">Special Program
+</select><br>
+</td></tr>
+<tr><td height=50>&nbsp;</td><td height=50>&nbsp;</td></tr>
+<tr><td valign=top><b>Display format:</b></td>
+<input type=hidden name="view" value=long>
+&nbsp;</td><td>
+<b>Specify which fields to display</b><br>
+<font size=-1>Select multiple fields by holding down the &lt;CNTL&gt; 
+key and then clicking on each field you wish to display.</font><br>
+<select name="displayfields" size=5 multiple>
+<option value="0" selected>Display all fields
+<option value="Name">Name
+<option value="Class Status">Class Status
+<option value="Primary Activity">Primary Activity
+<option value="Email">Email
+<option value="Major">Major
+<option value="Employer">Employer
+<option value="Department">Department
+<option value="Title">Title
+<option value="City">City
+<option value="State">State
+<option value="Country">Country
+<option value="Industry">Industry
+<option value="Job Type">Job Type
+<option value="How Found Internship">How Found Internship
+</select>
+<p>
+<select name="sortfield">
+<option value="0" selected>Select field to sort results by
+<option value="Name">Name
+<option value="Class Status">Class Status
+<option value="Primary Activity">Primary Activity
+<option value="Email">Email
+<option value="Major">Major
+<option value="Employer">Employer
+<option value="Department">Department
+<option value="Title">Title
+<option value="City">City
+<option value="State">State
+<option value="Country">Country
+<option value="Industry">Industry
+<option value="Job Type">Job Type
+<option value="How Found Internship">How Found Internship
+</select>
+</td></tr>
+</table><p>
+<center>
+<input type=submit value="Search">
+&nbsp; <input type=reset value="Clear form">
+</center>
+</form>
+<p>
+
+<p>
+
